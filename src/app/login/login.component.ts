@@ -2,6 +2,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import {MatDialog} from '@angular/material'
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -17,7 +19,8 @@ password: string;
     if(this.username == 'admin' && this.password == 'admin'){
      this.router.navigate(["user"]);
     }else {
-      alert("Invalid credentials");
+ 
+     
     }
   }
   }
